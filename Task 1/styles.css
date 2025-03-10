@@ -1,0 +1,255 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #1d1c1d;
+}
+
+.container {
+    width: 100%;
+    margin: 0 ;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #4a5de9;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4a5de9;
+}
+
+.btn-secondary {
+    background-color: #4a5de9;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #3b4fd3;
+}
+
+/* Header Styles */
+.header {
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 25px;
+}
+
+.main-nav {
+    margin-left: 40px;
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 24px;
+}
+
+.main-nav a {
+    color: #616061;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #1d1c1d;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in {
+    margin-right: 20px;
+    color: #616061;
+}
+
+.sign-in:hover {
+    color: #1d1c1d;
+}
+
+/* Conference Banner Styles */
+.conference-banner {
+    background-color: #1a1d2d;
+    color: white;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+}
+
+.banner-icon {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #1a1d2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* Hero Section Styles */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: #1a1d2d;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    color: #616061;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.signup-form {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.sign-in-prompt {
+    font-size: 14px;
+    color: #616061;
+}
+
+.sign-in-prompt a {
+    color: #4a5de9;
+}
+
+.sign-in-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+    
+    .hero-container {
+        flex-direction: column-reverse;
+    }
+    
+    .banner-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .signup-form {
+        flex-direction: column;
+    }
+    
+    .email-input {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-buttons .sign-in {
+        display: none;
+    }
+    
+    .header-container {
+        padding: 0 12px;
+    }
+}
