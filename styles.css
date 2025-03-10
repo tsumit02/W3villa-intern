@@ -212,7 +212,7 @@ h1 {
 }
 
 .sign-in-prompt a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Responsive Styles */
